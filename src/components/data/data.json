@@ -1,0 +1,173 @@
+[
+    {
+    "id": 0,
+    "title": "Root",
+    "children": [
+        {
+        "id": 1,
+        "title": "GET_HOTEL_INFO_FOR_AGENT",
+        "inputParametrs": [
+            {
+                "name": "HOTELINC*",
+                "type": "string",
+                "description": "Идентификационный номер отеля у оператора"
+            }
+        ],
+        "children": [
+            {
+            "id": 11,
+            "title": "Action 1A",
+            "inputParametrs": [
+                {
+                    "name": "HOTELINC*",
+                    "type": "string",
+                    "description": "Идентификационный номер отеля у оператора"
+                }
+            ],
+            "children": [
+                {
+                "id": 111,
+                "title": "Sub-Action 1A-1",
+                "inputParametrs": [
+                    {
+                        "name": "HOTELINC*",
+                        "type": "string",
+                        "description": "Идентификационный номер отеля у оператора"
+                    }
+                ],
+                "children": []
+                },
+                {
+                "id": 112,
+                "title": "Sub-Action 1A-2",
+                "inputParametrs": [
+                    {
+                        "name": "HOTELINC*",
+                        "type": "string",
+                        "description": "Идентификационный номер отеля у оператора"
+                    }
+                ],
+                "children": []
+                }
+            ]
+            },
+            {
+            "id": 12,
+            "title": "Action 1B",
+            "inputParametrs": [
+                {
+                    "name": "HOTELINC*",
+                    "type": "string",
+                    "description": "Идентификационный номер отеля у оператора"
+                }
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 2,
+        "title": "GET_COUNTRY_FOR_AGENT",
+        "inputParametrs": [
+            {
+                "name": "",
+                "type": "",
+                "description": ""
+            }
+        ],
+        "children": [
+            {
+            "id": 21,
+            "title": "Action 2A",
+            "inputParametrs": [
+                {
+                    "name": "HOTELINC*",
+                    "type": "string",
+                    "description": "Идентификационный номер отеля у оператора"
+                }
+            ],
+            "children": []
+            },
+            {
+            "id": 22,
+            "title": "Action 2B",
+            "inputParametrs": [
+                {
+                    "name": "HOTELINC*",
+                    "type": "string",
+                    "description": "Идентификационный номер отеля у оператора"
+                }
+            ],
+            "children": [
+                {
+                "id": 221,
+                "title": "Sub-Action 2B-1",
+                "inputParametrs": [
+                    {
+                        "name": "HOTELINC*",
+                        "type": "string",
+                        "description": "Идентификационный номер отеля у оператора"
+                    }
+                ],
+                "children": []
+                }
+            ]
+            },
+            {
+            "id": 23,
+            "title": "Action 2C",
+            "inputParametrs": [
+                {
+                    "name": "HOTELINC*",
+                    "type": "string",
+                    "description": "Идентификационный номер отеля у оператора"
+                }
+            ],
+            "children": []
+            }
+        ]
+        },
+        {
+        "id": 3,
+        "title": "GET_PACKETTYPELIST_FOR_AGENT",
+        "inputParametrs": [
+            {
+                "name": "HOTELINC*",
+                "type": "string",
+                "description": "Идентификационный номер отеля у оператора"
+            }
+        ],
+        "children": []
+        },
+        {
+        "id": 4,
+        "title": "GET_TOWNFROM_FOR_AGENT",
+        "inputParametrs": [
+            {
+                "name": "PACKETTYPE*",
+                "type": "int",
+                "description": "Id типа пакета, полученный из метода GET_PACKETTYPELIST_FOR_AGENT"
+            }
+        ],
+        "children": []
+        },
+        {
+            "id": 5,
+            "title": "GET_STATE_FOR_AGENT",
+            "inputParametrs": [
+                {
+                    "name": "PACKETTYPE*",
+                    "type": "int",
+                    "description": "Id типа пакета, полученный из метода GET_PACKETTYPELIST_FOR_AGENT"
+                },
+                {
+                    "name": "TOWNFROMINC*",
+                    "type": "int",
+                    "description": "Id города вылета, полученный из метода GET_TOWNFROM_FOR_AGENT"
+                }
+            ],
+            "children": []
+        }
+        ]
+    }
+]
